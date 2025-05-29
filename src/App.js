@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import members from './members_details.json';
+import data from './members_details.json';
 
 function App() {
 return (
@@ -10,7 +10,7 @@ return (
   </header>
 
   <div className="card-container">
-    {members.map((member, index) => (
+    {data.map((member, index) => (
     <div className="card" key={index}>
       <img
         src={'/' + member.picture}
